@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html, 
+body, 
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100%
+}
+
+.vanilla-zoom {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  grid-template-rows: 1fr 1fr 1fr
+}
+
+.small-preview {
+  grid-column: 1;
+  width: 100%;
+  max-height: 33vh;
+}
+
+.sidebar {
+  height: 100%;
+}
+
+.zoomed-image {
+  margin: 0 .25rem .25rem .25rem;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
