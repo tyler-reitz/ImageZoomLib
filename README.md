@@ -14,12 +14,30 @@
 
 ## Install
 
+Include the library in your html and call the init method with the parent elements selector
 ```
+<script src="vanilla-zoom/vanilla-zoom.js"></script>
+
+<script>
+    vanillaZoom.init('#my-gallery');
+</script>
 ```
 
 ## Usage
 
+`.zoomed-image` element take `src` attribute for clicked `.small-preview` element 
 ```
+<div id="my-gallery" class="vanilla-zoom">
+    
+    <div class="sidebar">
+        <img src="images/image-1.jpg" class="small-preview">
+        <img src="images/image-2.jpg" class="small-preview">
+        <img src="images/image-3.jpg" class="small-preview">
+    </div>
+
+    <!-- Required -->
+    <div class="zoomed-image"></div>
+</div>
 ```
 
 ## Maintainers
